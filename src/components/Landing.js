@@ -5,7 +5,13 @@ class Landing extends Component {
 
 
     render() {
-        return {/* your code here */ }
+        return (
+            <div>
+<h4>Welcome{this.props.user}</h4>
+<h4>The hottest item is {this.props.store.filter(i => {return i.hottest === true}).map(h => {return <div key={Math.random()}>{h.item} {h.price}</div> })} </h4>
+
+            </div>
+        )
 
     }
 }

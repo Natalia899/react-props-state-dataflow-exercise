@@ -11,8 +11,7 @@ class Wardrobe2 extends Component {
       { type: "accessory", color: "lilac", size: "" },
     ]
 
-    return
-    {/* your code here */ }
+    return wardrobe.filter(f => f.color === "blue" ).map(c=> <Article info={c} key={Math.random()} />)
 
   }
 }
